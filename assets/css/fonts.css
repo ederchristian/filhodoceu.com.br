@@ -1,0 +1,76 @@
+body {
+  font-family: "Tinos", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+a,
+button {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 1.6rem;
+  color: var(--navy);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 3.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4,
+h5,
+h6,
+a,
+button {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 767px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5,
+  h6,
+  a,
+  button {
+    font-size: 1.8rem;
+  }
+}

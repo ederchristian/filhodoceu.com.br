@@ -1,5 +1,12 @@
 @import "fonts.css";
+@import "form.css";
 @import "global.css";
 @import "header.css";
 @import "tracks.css";
 @import "variables.css";
+
+main {
+  position: relative;
+  z-index: 1;
+  top: 100vh;
+}

@@ -1,8 +1,9 @@
 .tracks {
-  width: 90%;
-  max-width: 90rem;
-  height: 50vh;
-  margin: auto;
+  background: #fff;
+}
+
+.tracks svg {
+  margin-bottom: -0.4rem;
 }
 
 .tracks__item {

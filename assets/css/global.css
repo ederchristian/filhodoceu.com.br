@@ -1,10 +1,12 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--white);
   color: var(--gray);
+  overflow-x: hidden;
 }
 
 .main-container {

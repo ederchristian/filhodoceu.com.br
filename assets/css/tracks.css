@@ -1,0 +1,37 @@
+.tracks {
+  width: 90%;
+  max-width: 90rem;
+  height: 50vh;
+  margin: auto;
+}
+
+.tracks__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.tracks__item h2,
+.tracks__item h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.tracks__item img {
+  margin: 12.8rem 0 1.6rem;
+  font-size: 2rem;
+  width: 12.8rem;
+  border-radius: 1rem;
+}
+
+.tracks__item h2 {
+  font-size: max(1.6vw, 1.8rem);
+}
+
+.tracks__item h3 {
+  margin: 0 0 0.8rem;
+  font-size: max(3.8vw, 3.2rem);
+}
+
+.tracks__item audio {
+  margin: 0 0 12.8rem;
+}

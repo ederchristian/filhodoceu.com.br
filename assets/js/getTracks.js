@@ -10,13 +10,15 @@ request.onload = function () {
     let tracksList = document.querySelector(".tracks__item");
 
     for (let counter = 0; counter < response.tracks.length; counter++) {
-      let albums = response.tracks[counter].album.name;
       let albumCovers = response.tracks[counter].album.images[1].url;
-      let songs = response.tracks[counter].name;
+      let albumNames = response.tracks[counter].album.name;
+      let songNames = response.tracks[counter].name;
+      let previews = response.tracks[counter].preview_url;
 
       tracksList.appendChild(getAlbumCovers(albumCovers));
-      tracksList.appendChild(getAlbumns(albums));
-      tracksList.appendChild(getSongs(songs));
+      tracksList.appendChild(getAlbumns(albumNames));
+      tracksList.appendChild(getSongs(songNames));
+      tracksList.appendChild(getPreviews(previews));
     }
   }
 };
@@ -26,6 +28,7 @@ let getAlbumCovers = function (albumCover) {
   albumCoverItem.src = albumCover;
 
   document.body.appendChild(albumCoverItem);
+
   return albumCoverItem;
 };
 
@@ -45,6 +48,16 @@ let getSongs = function (song) {
   songItem.appendChild(songTitle);
 
   return songItem;
+};
+
+let getPreviews = function (preview) {
+  let previewItem = document.createElement("audio");
+  previewItem.src = preview;
+  previewItem.setAttribute("controls", "");
+
+  document.body.appendChild(previewItem);
+
+  return previewItem;
 };
 
 request.send();

@@ -1,0 +1,29 @@
+{
+  "name": "filho-do-ceu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ederchristian/filho-do-ceu.git"
+  },
+  "keywords": [
+    "padre fabio de melo",
+    "fabio de melo",
+    "filho do ceu"
+  ],
+  "author": "@ederchristian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ederchristian/filho-do-ceu/issues"
+  },
+  "homepage": "https://github.com/ederchristian/filho-do-ceu#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}

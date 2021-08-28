@@ -1,0 +1,9 @@
+.form {
+  background: var(--white);
+}
+
+.form__button.main-button {
+  max-width: 36rem;
+  background: var(--gray);
+  color: var(--white);
+}

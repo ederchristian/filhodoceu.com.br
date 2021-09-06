@@ -5,7 +5,7 @@
   height: 100vh;
 }
 
-.header img {
+.header__main-image {
   position: absolute;
   right: -0.1rem;
   bottom: -0.1rem;
@@ -24,17 +24,37 @@
   padding-top: 3.2rem;
 }
 
+.header__container__eder-christian {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 2.4rem;
+}
+
+.header__container__eder-christian span {
+  font-size: 1.8rem;
+  padding-right: 0.6rem;
+}
+
+.header__container__eder-christian img {
+  width: 12.8rem;
+}
+
+.header__container__eder-christian a {
+  line-height: 0;
+}
+
 .header__container h2 {
   max-width: 68rem;
 }
 
-.header__container a {
+.header__container .main-button {
   background: var(--gray);
   color: var(--white);
 }
 
 @media screen and (min-width: 767px) {
-  .header img {
+  .header__main-image {
     position: absolute;
     right: -0.1rem;
     bottom: -0.1rem;

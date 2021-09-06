@@ -50,14 +50,20 @@ let getSongs = function (song) {
   return songItem;
 };
 
-let getPreviews = function (preview) {
-  let previewItem = document.createElement("audio");
-  previewItem.src = preview;
-  previewItem.setAttribute("controls", "");
+for (let counter = 0; counter < 1; counter++) {
+  var getPreviews = function (preview) {
+    counter += 1;
 
-  document.body.appendChild(previewItem);
+    let previewItem = document.createElement("audio");
+    previewItem.src = preview;
+    previewItem.setAttribute("controls", "");
 
-  return previewItem;
-};
+    previewItem.setAttribute("id", `audio-${counter}`);
+
+    document.body.appendChild(previewItem);
+
+    return previewItem;
+  };
+}
 
 request.send();

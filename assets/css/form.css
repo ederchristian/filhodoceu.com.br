@@ -1,5 +1,6 @@
 .form {
   background: var(--white);
+  padding-bottom: 16.4rem;
 }
 
 .form__button.main-button {

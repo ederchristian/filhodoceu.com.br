@@ -34,5 +34,21 @@
 }
 
 .tracks__item audio {
+  margin: 0 0 2rem;
+}
+
+.tracks__item a {
   margin: 0 0 12.8rem;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 24rem;
+  height: 3.6rem;
+  border-radius: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: max(1.2rem, 1.4rem);
+  color: var(--white);
+  text-decoration: none;
 }

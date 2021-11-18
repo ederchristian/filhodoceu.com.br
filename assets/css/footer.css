@@ -1,0 +1,28 @@
+.footer {
+  background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 3.2rem;
+}
+
+.footer p,
+.footer a {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.footer a {
+  color: var(--blue);
+}
+
+@media screen and (min-width: 767px) {
+  .footer p,
+  .footer a {
+    font-size: 1.4rem;
+  }
+}

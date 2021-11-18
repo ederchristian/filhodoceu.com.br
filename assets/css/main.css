@@ -4,6 +4,7 @@
 @import "header.css";
 @import "tracks.css";
 @import "variables.css";
+@import "waves.css";
 
 main {
   position: relative;

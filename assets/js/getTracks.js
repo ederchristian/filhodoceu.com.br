@@ -20,6 +20,7 @@ request.onload = function () {
       tracksList.appendChild(getAlbumns(albumNames));
       tracksList.appendChild(getSongs(songNames));
       tracksList.appendChild(getPreviews(previews));
+      tracksList.appendChild(createSineWave(15));
       tracksList.appendChild(getFullSongs(fullSongs));
     }
   }
@@ -67,6 +68,45 @@ for (let counter = 0; counter < 1; counter++) {
     return previewItem;
   };
 }
+
+const setAttributes = (element) => (attributes) =>
+  Object.keys(attributes).forEach((key) =>
+    element.setAttribute(key, attributes[key])
+  );
+
+const createSVG = () =>
+  document.createElementNS("http://www.w3.org/2000/svg", "svg");
+const createFromSVG = (svg) => (name) =>
+  document.createElementNS(svg.namespaceURI, name);
+
+const createSineWave = (length) => {
+  if (length < 1) return undefined;
+
+  const svg = createSVG(),
+    path = createFromSVG(svg)("path");
+
+  setAttributes(svg)({
+    viewBox: `0 0 ${length * 100} 100`,
+    class: "sine-wave",
+  });
+
+  setAttributes(path)({
+    class: "sine-wave-path",
+    d: `M 0 50${Array(length + 2)
+      .fill()
+      .map(
+        (x, index) =>
+          ` Q ${index * 100 + 50} ${index % 2 === 0 ? 0 : 100}, ${
+            (index + 1) * 100
+          } 60`
+      )
+      .join("")}`,
+  });
+
+  svg.appendChild(path);
+
+  return svg;
+};
 
 let getFullSongs = function (fullSong) {
   let songIcon = document.createElement("img");

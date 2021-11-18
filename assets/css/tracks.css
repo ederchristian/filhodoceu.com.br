@@ -35,10 +35,11 @@
 
 .tracks__item audio {
   margin: 0 0 2rem;
+  opacity: 0;
 }
 
 .tracks__item a {
-  margin: 0 0 12.8rem;
+  margin: 0 0 25.6rem;
   background: var(--blue);
   display: flex;
   align-items: center;

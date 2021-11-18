@@ -98,7 +98,7 @@ const createSineWave = (length) => {
         (x, index) =>
           ` Q ${index * 100 + 50} ${index % 2 === 0 ? 0 : 100}, ${
             (index + 1) * 100
-          } 60`
+          } 50`
       )
       .join("")}`,
   });

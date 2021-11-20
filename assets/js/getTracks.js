@@ -5,8 +5,6 @@ request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
     let response = JSON.parse(request.responseText);
 
-    console.log(response);
-
     let tracksList = document.querySelector(".tracks__item");
 
     for (let counter = 0; counter < response.tracks.length; counter++) {
@@ -60,6 +58,7 @@ for (let counter = 0; counter < 1; counter++) {
     let previewItem = document.createElement("audio");
     previewItem.src = preview;
     previewItem.setAttribute("controls", "");
+    previewItem.setAttribute("muted", "");
 
     previewItem.setAttribute("id", `audio-${counter}`);
 

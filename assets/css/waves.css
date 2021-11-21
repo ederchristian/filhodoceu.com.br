@@ -8,7 +8,7 @@ svg.sine-wave {
   stroke: var(--gray);
   fill: transparent;
   stroke-width: 0.4rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sine-wave .sine-wave-path {

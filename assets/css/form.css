@@ -1,8 +1,8 @@
 .form {
   background: var(--white);
-  padding-bottom: 16.4rem;
+  padding-bottom: 9rem;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .form__button.main-button {

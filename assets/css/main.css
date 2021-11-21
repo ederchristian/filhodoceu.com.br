@@ -10,8 +10,6 @@
 main {
   position: relative;
   z-index: 1;
-  top: 100vh;
-  margin-bottom: -10rem;
   background: var(--white);
 }
 

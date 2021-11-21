@@ -58,7 +58,7 @@ for (let counter = 0; counter < 1; counter++) {
     let previewItem = document.createElement("audio");
     previewItem.src = preview;
     previewItem.setAttribute("controls", "");
-    previewItem.setAttribute("muted", "");
+    previewItem.setAttribute("muted", "muted");
 
     previewItem.setAttribute("id", `audio-${counter}`);
 

@@ -1,6 +1,7 @@
 .header {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70rem;
 }
 
 .header__main-image {
@@ -52,15 +53,25 @@
 }
 
 @media screen and (min-width: 767px) {
+  .header {
+    height: 100vh;
+  }
+
   .header__main-image {
     position: absolute;
     right: -0.1rem;
     bottom: -0.1rem;
-    width: 50rem;
+    width: 40%;
   }
 
   .header__container {
     justify-content: center;
     padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header__main-image {
+    width: 40rem;
   }
 }

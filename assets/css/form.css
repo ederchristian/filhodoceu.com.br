@@ -3,6 +3,7 @@
   padding-bottom: 9rem;
   position: relative;
   z-index: 3;
+  padding-top: 6.4rem;
 }
 
 .form__button.main-button {
@@ -21,4 +22,10 @@
 .form a {
   font-size: 1.8rem;
   color: var(--blue);
+}
+
+@media screen and (min-width: 900px) {
+  .form {
+    padding-top: 0;
+  }
 }
